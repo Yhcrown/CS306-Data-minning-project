@@ -30,3 +30,4 @@ df_Second['time'] = df_Second['time'].astype(int)
 df_Second['hour'] = pd.cut(df_Second['time'], bins=[-1, 5, 10, 13, 18, 24], labels=['morning', 'forenoon', 'noon', 'afternoon', 'night'])
 df_Second = df_Second.drop(columns=['time'])
 print(df_Second)
+
